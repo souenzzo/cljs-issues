@@ -1,7 +1,7 @@
 (ns demo.core
-    (:require ["graphql-voyager" :as voyager]
-              ["React" :as react]
-              ["ReactDOM" :as react-dom]))
+    (:require [graphql-voyager :as voyager]
+              [react :as react]
+              [react-dom :as react-dom]))
 
 (defn introspection-provider
   [query]
@@ -14,7 +14,7 @@
 
 (enable-console-print!)
 
-(.render react-dom (.createElement react voyager/Voyager #js{:introspection introspection-provider} nil)
+(.render react-dom (.createElement react voyager/Voyager #js{:introspection introspection-provider} nil))
 
 
 
