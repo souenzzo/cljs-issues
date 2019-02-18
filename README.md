@@ -1,8 +1,13 @@
 # Steps to reproduce
 
-*  `lein figwheel`
+*  `lein run`
 
-* wait the browser and open the console
+* Open firefox (easier to see it in firefox) browser at `http://localhost:8081`
 
-* `Error: Undefined nameToPath for module$tmp$cljs_issues$node_modules$graphql$index_mjs` on browser console
+* Open your console (F12), go to network tab and enable  `size` and `transferred`
 
+* Click on buttons and checkout the differente between with and without token (POST just work with token)
+
+![](error.png?raw=true)
+
+( transfer size on get without token is way smaller, due gzip )
