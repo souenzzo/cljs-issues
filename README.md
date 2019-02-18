@@ -1,5 +1,7 @@
 # Steps to reproduce
 
+*  Be sure that it's on this branch `git checkout pedestal-issue`
+
 *  `lein run`
 
 * Open firefox (easier to see it in firefox) browser at `http://localhost:8081`
